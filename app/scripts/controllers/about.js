@@ -19,10 +19,5 @@ angular.module('machineAppApp')
         function errorHandle(response) {
             console.error(response);
         }
-        DataHouse.putData({
-            "id": 1,
-            "userId": 123,
-            "title": "Some Title",
-            "body": "Some Body text"
-        }).then(successHandle, errorHandle);
+        DataHouse.getData().then(successHandle, errorHandle);
     });
