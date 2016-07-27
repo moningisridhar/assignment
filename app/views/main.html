@@ -1,0 +1,12 @@
+
+  <div class="row">
+    <div class="card col-xs-6 col-lg-3" ng-repeat="item in main.response.data.productsInCart">
+      <img ng-src="{{::item.p_image}}" alt="image" class="img-responsive" />
+      <span class="title">{{::item.p_name|uppercase}}</span>
+      <span class="fa fa-ellipsis-h overlay"><ul class="dropdown">
+  <li>open</li>
+  <li>delete</li>
+  <li>edit</li>
+</ul></span>
+    </div>
+</div>
